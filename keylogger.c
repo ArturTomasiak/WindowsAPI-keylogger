@@ -10,7 +10,7 @@ int main() {
     for (int i = 0; i < 256; i++)
         GetAsyncKeyState(i);
         
-    while (!(GetAsyncKeyState(VK_NUMPAD9) & 0b1)) {
+    while (!(GetAsyncKeyState(VK_F9) & 0b1)) {
 
         for (int i = 0; i < 256; i++) {
             
