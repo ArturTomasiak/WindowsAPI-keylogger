@@ -15,7 +15,7 @@ gcc keylogger.c -o keylogger -mwindows
 ```c
 #define WIN32_LEAN_AND_MEAN
 ```
-The above define lowers the amount of headers included by the windows api, making it "faster".
+The above define excludes APIs such as Cryptography, DDE, RPC, Shell, and Windows Sockets, resulting in faster compilation times and reduced binary size.
 
 ---
 
